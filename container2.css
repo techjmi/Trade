@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container-2 {
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*  to section of right part of screen or .container-2.....heading abd search box */
+.top {
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading h2 {
+  margin: 0;
+}
+
+.search-input {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  width: calc(100% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+/* below top whcih contain grid system box */
+.part1 {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* part2 of .container-2....which conatain graph and circular part inside it */
+.part2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/*rectengle part contaning graph and heading...inside it  */
+.rectengle {
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 65%;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.graphDes {
+  display: flex;
+  flex-direction: row;
+  /* background-color: yellow; */
+  justify-content: space-between;
+}
+
+.graphDes .overview {
+  display: flex;
+  float: left;
+}
+
+.graphDes .Quater {
+  display: flex;
+  float: right;
+}
+
+/* Apply css properties to h1 element */
+h1 {
+  text-align: center;
+}
+
+
+.graph {
+  margin-top: 5px;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+/* .bar-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: gold;
+} */
+
+.bar {
+  border-radius: 3px;
+  padding: 10px;
+  margin: 20px 20px 10px 10px;
+  flex: 1;
+  background-color: #007bff;
+
+
+}
+
+/* cs to circle part  or right part of part 2*/
+.part2 .circle {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  margin-left: 2px;
+  position: relative;
+  width: 35%;
+
+}
+
+/* Apply CSS properties to ui-widgets class */
+.ui-widgets {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9rem;
+  margin: 1.5rem;
+  border: 1.2rem solid palegreen;
+  box-shadow: inset 0 0 7px grey;
+  border-left-color: palegreen;
+  border-top-color: chartreuse;
+  border-right-color: darkgreen;
+  border-bottom-color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Apply css properties to ui-widgets class 
+    and ui-values class*/
+.ui-widgets .ui-values {
+  top: 40px;
+  position: relative;
+  left: 10px;
+  right: 0;
+  font-weight: 700;
+  font-size: 2.0rem;
+
+}
+
+/* Apply css properties to ui-widgets 
+    class and ui-labels class*/
+.ui-widgets .ui-labels {
+
+  left: 0;
+  bottom: -16px;
+  text-shadow: 0 0 4px grey;
+  color: black;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+}

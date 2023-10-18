@@ -1,0 +1,41 @@
+/* whole screen css */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.container-1 {
+  overflow: hidden;
+  width: 15%;
+  /* flex: 1; */
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: navy;
+  align-items: center;
+}
+
+.container-2 {
+  width: 85%;
+  /* flex: 9; */
+  /* This will take up 9 parts out of 10 (90%) */
+}
